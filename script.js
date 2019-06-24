@@ -24,7 +24,7 @@ function displayResults(responseJson) {
 
 function getBreweries(citySearch, stateSearch) {
   const params = {
-    by_tag: "dog-friendly",
+    
     by_city: citySearch,
     by_state: stateSearch,
   };
