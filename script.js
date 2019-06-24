@@ -12,8 +12,8 @@ function displayResults(responseJson) {
   console.log(responseJson);
   $('#results-list').empty();
     $('#results-list').append(
-      `<li><h3>${responseJson.data.name[i]}</h3>
-      <p>${responseJson.data[i].street}</p>
+      `<li><h3>${responseJson.name[i]}</h3>
+      <p>${responseJson.street[i]}</p>
       <p>${responseJson.data[i].city}</p>
       <p>${responseJson.data[i].state}</p>
       <a href="${responseJson.data[i].website_url}">Vist Website</a>
@@ -24,7 +24,7 @@ function displayResults(responseJson) {
 
 function getBreweries(citySearch, stateSearch) {
   const params = {
-    
+    by_tag: "dog-friendly",
     by_city: citySearch,
     by_state: stateSearch,
   };
