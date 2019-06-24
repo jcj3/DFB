@@ -12,7 +12,7 @@ function displayResults(responseJson) {
   console.log(responseJson);
   $('#results-list').empty();
     $('#results-list').append(
-      `<li><h3>${responseJson.name}</h3>
+      `<li><h3>${responseJson.data.name}</h3>
       <p>${responseJson.street[i]}</p>
       <p>${responseJson.data[i].city}</p>
       <p>${responseJson.data[i].state}</p>
