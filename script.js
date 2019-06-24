@@ -12,7 +12,7 @@ function displayResults(responseJson) {
   console.log(responseJson);
   $('#results-list').empty();
     $('#results-list').append(
-      `<li><h3>${responseJson.name}</h3>
+      `<li><h3>${responseJson.name[i]}</h3>
       <p>${responseJson.street[i]}</p>
       <p>${responseJson.data[i].city}</p>
       <p>${responseJson.data[i].state}</p>
@@ -24,7 +24,6 @@ function displayResults(responseJson) {
 
 function getBreweries(citySearch, stateSearch) {
   const params = {
-    
     by_city: citySearch,
     by_state: stateSearch,
   };
