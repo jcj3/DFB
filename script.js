@@ -12,11 +12,11 @@ function displayResults(responseJson) {
   console.log(responseJson);
   $('#results-list').empty();
     $('#results-list').append(
-      `<li><h3>${responseJson.data[i].name}</h3>
-      <p>${responseJson.data[i].street}</p>
-      <p>${responseJson.data[i].city}</p>
-      <p>${responseJson.data[i].state}</p>
-      <a href="${responseJson.data[i].website_url}">Vist Website</a>
+      `<li><h3>${responseJson.name[i]}</h3>
+      <p>${responseJson.street[i]}</p>
+      <p>${responseJson.city[i]}</p>
+      <p>${responseJson.state[i]}</p>
+      <a href="${responseJson.website_url[i]}">Vist Website</a>
       </li>`
     );
     $('#results').removeClass('.hidden');
