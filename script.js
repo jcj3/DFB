@@ -19,7 +19,7 @@ function displayResults(responseJson) {
       <a href="${responseJson.data[i].website_url}">Vist Website</a>
       </li>`
     );
-    $('#results').removeClass('hidden');
+    $('#results').removeClass('.hidden');
   };
 
 function getBreweries(citySearch, stateSearch) {
