@@ -11,16 +11,16 @@ function formatQueryParams(params) {
 function displayResults(responseJson) {
   console.log(responseJson);
   $('#results-list').empty();
-    $('#results-list').append(
-      `<li><h3>${responseJson.name[i]}</h3>
-      <p>${responseJson.street[i]}</p>
-      <p>${responseJson.city[i]}</p>
-      <p>${responseJson.state[i]}</p>
-      <a href="${responseJson.website_url[i]}">Vist Website</a>
-      </li>`
+  $('#results-list').append(
+    `<li><h3>${responseJson.name[i]}</h3>
+    <p>${responseJson.street[i]}</p>
+    <p>${responseJson.city[i]}</p>
+    <p>${responseJson.state[i]}</p>
+    <a href="${responseJson.website_url[i]}">Vist Website</a>
+    </li>`
     );
-    $('#results').removeClass('.hidden');
-  };
+  $('#results').removeClass('.hidden');
+}
 
 function getBreweries(citySearch, stateSearch) {
   const params = {
