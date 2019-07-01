@@ -16,9 +16,8 @@ function displayResults(responseJson) {
     <p>${responseJson.street[i]}</p>
     <p>${responseJson.city[i]}</p>
     <p>${responseJson.state[i]}</p>
-    <a href="${responseJson.website_url[i]}">Vist Website</a>
-    </li>`
-    );
+    <a href="${responseJson.website_url[i]}">Visit Website</a>
+    </li>`);
   $('#results').removeClass('.hidden');
 }
 
